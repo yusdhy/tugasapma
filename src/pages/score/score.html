@@ -1,0 +1,39 @@
+<!--
+  Generated template for the ScorePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>CoffeOrderApps</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="score-left" col-6>{{register.player_one}}</ion-col>
+      <ion-col class="score-right" col-6>{{register.player_two}}</ion-col>
+    </ion-row>    
+    <ion-row>
+      <ion-col class="score-left" col-6>{{data.score_left}}</ion-col>
+      <ion-col class="score-right" col-6>{{data.score_right}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6><button (click)="do_plus('left')" class="btn-plus-font-size" ion-button round color="light">+</button></ion-col>
+      <ion-col col-6><button (click)="do_plus('right')" class="btn-plus-font-size" ion-button round color="light">+</button></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6><button (click)="do_minus('left')" class="btn-plus-font-size" ion-button round color="light">-</button></ion-col>
+      <ion-col col-6><button (click)="do_minus('right')" class="btn-plus-font-size" ion-button round color="light">-</button></ion-col>
+    </ion-row>  
+    <ion-row>
+      <ion-col col-6><button (click)="do_cancel('left')" class="btn-plus-font-size" ion-button round color="light">C</button></ion-col>
+      <ion-col col-6><button (click)="do_cancel('right')" class="btn-plus-font-size" ion-button round color="light">C</button></ion-col>
+    </ion-row>    
+  </ion-grid>
+</ion-content>

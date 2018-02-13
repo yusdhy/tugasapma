@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      CoffeOrderApps
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form (ngSubmit)="register_form()">
+    <ion-list>
+        <ion-item>
+          <ion-label stacked>Player 1</ion-label>
+          <ion-input type="text" [(ngModel)]="data.player_one" name="player_one"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label stacked>Player 2</ion-label>
+          <ion-input type="text" [(ngModel)]="data.player_two" name="player_two"></ion-input>
+        </ion-item>
+      </ion-list>
+    <button type="submit" ion-button full>NEXT</button>
+  </form>
+</ion-content>
